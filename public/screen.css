@@ -1,12 +1,114 @@
 :root {
-  font: 16px / 1 sans-serif;
+  font: 36px / 1 sans-serif;
+  color: rgb(216, 216, 216);
+  font-family: Helvetica, Arial, sans-serif;
+  font-weight: bold;
 }
 
 html {
   height: 100%;
 }
 
+/*
+Background: 51, 51, 51
+Regular text: 216, 216, 216
+highlight, visited link: 255, 94, 94
+Link: 151, 151, 151
+Button: Black
+
+Image sizes
+Mobile: 942x1200 (0.785)
+Tablet: 844 x 701 (1.2)
+
+Originals: 
+Skull: 2304 x 3456 (0.66)
+Squash: 2000 x 3000 (0.66)
+Door: 2203 x 3304 (0.66)
+Squash2: 800 x 1067 (0.75)
+Pumpkins_carved: 3840 x 5760; (0.66)
+*/
+
 body {
-  margin: 0;
   min-height: 100%;
+  background-color: rgb(51, 51, 51);
+}
+
+.intro,
+footer {
+  font-size: 2rem;
+  text-align: center;
+  margin-bottom: 150px;
+}
+
+nav ul {
+  display: flex;
+  flex-flow: wrap;
+  justify-content: center;
+  padding-bottom: 100px;
+}
+
+nav li {
+  list-style-type: none;
+  padding: 0.25rem 0.75rem;
+  font-size: 0.75rem;
+  font-weight: normal;
+}
+
+a {
+  color: rgb(151, 151, 151);
+  text-decoration: none;
+}
+
+a:visited,
+em {
+  color: rgb(255, 94, 94);
+  font-style: normal;
+}
+
+/*
+img {
+  width: 100%;
+  padding-top: 30px;
+}
+*/
+
+.all_content {
+  margin: 110px 3%;
+}
+
+header {
+  margin: 100px 30px 200px 30px;
+}
+
+.button {
+  font-size: 0.75rem;
+  font-weight: normal;
+  padding: 20px 40px;
+  background-color: black;
+}
+
+.button > ul {
+  list-style-type: none;
+  align-items: center;
+}
+
+.touch {
+  display: flex;
+  justify-content: center;
+}
+
+footer {
+  padding-top: 100px;
+}
+
+figure {
+  /* width:300px; container-width*/
+  overflow: hidden; /* hide bounds of image */
+  margin: 30px; /*reset margin of figure tag*/
+}
+
+figure img {
+  display: block; /*remove inline-block spaces*/
+  width: 100%; /*make image stretch*/
+  margin: -7.875% 0;
 }
