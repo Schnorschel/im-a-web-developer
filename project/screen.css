@@ -1,0 +1,191 @@
+/*
+Background: 51, 51, 51
+Regular text: 216, 216, 216
+highlight, visited link: 255, 94, 94
+Link: 151, 151, 151
+Button: Black
+
+Image sizes
+Mobile: 942x1200 (0.785)
+Tablet: 844 x 701 (1.2)
+
+Originals: 
+Skull: 2304 x 3456 (0.66)
+Squash: 2000 x 3000 (0.66)
+Door: 2203 x 3304 (0.66)
+Squash2: 800 x 1067 (0.75)
+Pumpkins_carved: 3840 x 5760; (0.66)
+*/
+
+:root {
+  font: 36px / 1 sans-serif;
+  color: rgb(216, 216, 216);
+  font-family: Helvetica, Arial, sans-serif;
+  font-weight: bold;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  min-height: 100%;
+  background-color: rgb(51, 51, 51);
+}
+
+.intro,
+footer {
+  font-size: 2rem;
+  text-align: center;
+  margin-bottom: 150px;
+}
+
+nav .mid-nav {
+  display: flex;
+  flex-flow: wrap;
+  justify-content: center;
+  padding-bottom: 100px;
+}
+
+nav .mid-nav li {
+  list-style-type: none;
+  padding: 0.25rem 0.75rem;
+  font-size: 0.75rem;
+  font-weight: normal;
+}
+
+nav .top-nav {
+  display: flex;
+  flex-flow: wrap;
+  justify-content: center;
+}
+
+nav .top-nav li {
+  list-style-type: none;
+  padding: 0.25rem 0.5rem;
+  font-size: 0.75rem;
+  font-weight: normal;
+}
+
+a {
+  color: rgb(151, 151, 151);
+  text-decoration: none;
+}
+
+a:visited,
+em {
+  color: rgb(255, 94, 94);
+  font-style: normal;
+}
+
+/*
+img {
+  width: 100%;
+  padding-top: 30px;
+}
+*/
+
+.all_content {
+  margin: 110px 3%;
+}
+
+header {
+  margin: 100px 30px 200px 30px;
+}
+
+.button {
+  font-size: 0.75rem;
+  font-weight: normal;
+  padding: 20px 40px;
+  text-align: center;
+  background-color: black;
+}
+
+.button a {
+  color: white;
+}
+/*
+.button > ul {
+  list-style-type: none;
+  align-items: center;
+  color: lightblue;
+  padding: 0; 
+}
+*/
+
+.touch {
+  display: flex;
+  justify-content: center;
+}
+
+footer {
+  padding-top: 100px;
+}
+
+.imagery section {
+  /* width:300px; container-width*/
+  overflow: hidden; /* hide bounds of image */
+  margin: 30px; /*reset margin of figure tag*/
+}
+
+.imagery img {
+  display: block; /*remove inline-block spaces*/
+  width: 100%; /*make image stretch*/
+  margin: -7.875% 0;
+}
+
+.top-nav {
+  display: none;
+  padding: 0;
+  margin: 0;
+}
+
+.top-nav a {
+  color: rgb(28, 217, 255);
+}
+
+.top-of-page {
+  display: flex;
+  align-content: flex-start;
+  justify-content: space-between;
+  /* background-color: fuchsia; */
+}
+
+.top-of-page nav {
+  display: flex;
+  align-items: flex-start;
+  /* background-color: blueviolet; */
+}
+
+.top-of-page section {
+  padding: 0;
+  margin: 0;
+}
+
+@media (min-width: 600px) {
+  .top-nav {
+    display: flex;
+    /*  background-color: teal;
+    border: 1px solid white; */
+    margin-top: 0;
+  }
+
+  .imagery section {
+    border: 2px solid lightgreen;
+    width: 42%;
+    display: flex;
+  }
+
+  .imagery {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    /*justify-content: flex-start;
+    /*width: 100%;*/
+    background-color: lightsalmon;
+  }
+
+  .imagery img {
+    margin: -7.8%;
+  }
+}
